@@ -1,14 +1,18 @@
 # angular-starter-httpclient
-- Date : 07/12/2018 12:00
+- Date : 10/12/2018 14:33
 - Author : chendra
 
 # Prerequisites
 - Angular version 7.1.2
 - Angular-cli version 7.1.2
+- Angular universal version 7.0.2
 - Visual studio code version 1.29.1
 - Typescript version 3.1.6
 - node.js version 10.14.1 LTS (Long Term Support)
 - npm (node package manager) version 6.4.1
+- Jquery version 3.3.1
+- Bootstrap version 4.1.3
+- Fontawesome version 4.7.0
 
 # Installation
 - npm install (installing dependencies)
