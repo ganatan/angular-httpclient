@@ -6,7 +6,7 @@
 - Angular version 7.2.0
 - Angular-cli version 7.2.1
 - Angular universal version 7.0.2
-- Visual studio code version 1.29.1
+- Visual studio code version 1.30.1
 - Typescript version 3.1.6
 - node.js version 10.15.0 LTS (Long Term Support)
 - npm (node package manager) version 6.5.0
