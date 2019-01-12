@@ -40,3 +40,15 @@
 # Tutorials
 - https://www.ganatan.com/tutorials/angular-httpclient
 - https://www.ganatan.com/docs
+
+# Docker commands
+docker-compose build
+docker-compose images
+docker-compose logs
+docker-compose ps
+docker-compose down
+docker-compose stop
+docker-compose start
+docker-compose restart
+docker-compose rm -f
+
