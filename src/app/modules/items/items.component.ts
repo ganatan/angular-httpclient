@@ -17,8 +17,7 @@ export class ItemsComponent implements OnInit {
 
   ngOnInit() {
     this.getUsers();
-    this.getIp();
-
+    //    this.getIp();
   }
 
   getUsers() {
@@ -29,12 +28,12 @@ export class ItemsComponent implements OnInit {
         });
   }
 
-  getIp() {
-    this.itemsService.getIp('https://api.ipify.org?format=json')
-      .subscribe(
-        address => {
-          this.address = address;
-        });
-  }
+  /*  getIp() {
+      this.itemsService.getIp('https://api.ipify.org?format=json')
+        .subscribe(
+          address => {
+            this.address = address;
+          });
+    }*/
 
 }
