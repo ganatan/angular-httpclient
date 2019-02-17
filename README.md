@@ -1,17 +1,16 @@
 # angular-starter-httpclient
-- Date : 15/01/2019 07:39
+- Date : 17/02/2019 10:34
 - Author : danny ganatan
 
 # Prerequisites
-- Angular version 7.2.0
-- Angular-cli version 7.2.1
-- Angular universal version 7.0.2
-- Visual studio code version 1.30.1
-- Typescript version 3.1.6
-- node.js version 10.15.0 LTS (Long Term Support)
+- Angular version 7.2.5
+- Angular-cli version 7.3.1
+- Visual studio code version 1.31.1
+- Typescript version 3.2.4
+- node.js version 10.15.1 LTS (Long Term Support)
 - npm (node package manager) version 6.5.0
 - Jquery version 3.3.1
-- Bootstrap version 4.2.1
+- Bootstrap version 4.3.1
 - Fontawesome version 4.7.0
 
 # Installation
@@ -38,19 +37,7 @@
 - http://localhost:4000/
 
 # Tutorials
-- https://www.ganatan.com/tutorials/angular-httpclient
+- https://www.ganatan.com/tutorials/server-side-rendering-avec-angular-universal
+
 - https://www.ganatan.com/docs
-
-# Docker commands
-docker-compose build
-docker-compose up -d
-docker-compose stop
-
-docker-compose images
-docker-compose logs
-docker-compose ps
-docker-compose down
-docker-compose start
-docker-compose restart
-docker-compose rm -f
 

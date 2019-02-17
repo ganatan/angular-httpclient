@@ -9,7 +9,6 @@ import { ItemsService } from './items.service';
 export class ItemsComponent implements OnInit {
 
   items: any;
-  address: any;
   constructor(
     private itemsService: ItemsService) {
 
@@ -17,7 +16,6 @@ export class ItemsComponent implements OnInit {
 
   ngOnInit() {
     this.getUsers();
-    //    this.getIp();
   }
 
   getUsers() {
@@ -27,13 +25,5 @@ export class ItemsComponent implements OnInit {
           this.items = items;
         });
   }
-
-  /*  getIp() {
-      this.itemsService.getIp('https://api.ipify.org?format=json')
-        .subscribe(
-          address => {
-            this.address = address;
-          });
-    }*/
 
 }
