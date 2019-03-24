@@ -1,4 +1,4 @@
-# Angular 7 Starter - HTTP Client
+# Angular 7 Starter - HttpClient
 
 
 > An Angular starter kit featuring [Angular 7.2.10](https://angular.io), [Angular-cli 7.3.6](https://cli.angular.io/)
@@ -19,10 +19,10 @@
 
 ```bash
 # clone the repo
-git clone https://github.com/ganatan/angular-starter-ssr
+git clone https://github.com/ganatan/angular-starter-httpclient
 
 # change directory
-cd angular-starter
+cd angular-starter-httpclient
 
 # install the repo with npm
 npm install
@@ -57,19 +57,23 @@ What you need to run this app:
 * `npm run start`
 *  in your browser [http://localhost:4200](http://localhost:4200) 
 
-
-### Compilation 
+### Production without Server Side Rendering (Ahead-of-Time)
 * `npm run build`
-* `http-server -p 8080 -c-1 dist/angular-starter`
+* `http-server -p 8080 -c-1 dist/browser`
 *  in your browser [http://localhost:8080](http://localhost:8080) 
+
+# Production with Server Side Rendering
+* `npm run build:ssr`
+* `npm run serve:ssr`
+*  in your browser [http://localhost:4000](http://localhost:4000) 
 
 ### Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
 
-### author
-* Updated : 23/03/2019
+### Author
+* Updated : 24/03/2019
 * Author  : danny ganatan
 * Website : https://www.ganatan.com/guide
 
