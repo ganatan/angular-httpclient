@@ -11,9 +11,9 @@ describe('ItemsComponent', () => {
       imports: [
         HttpClientModule
       ],
-      declarations: [ItemsComponent]
+      declarations: [ ItemsComponent ]
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
