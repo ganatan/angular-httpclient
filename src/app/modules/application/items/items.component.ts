@@ -9,9 +9,9 @@ import { ItemsService } from './items.service';
 export class ItemsComponent implements OnInit {
 
   items: any;
+  loaded: boolean;
   constructor(
     private itemsService: ItemsService) {
-
   }
 
   ngOnInit() {
@@ -19,11 +19,18 @@ export class ItemsComponent implements OnInit {
   }
 
   getUsers() {
+    this.loaded = false;
     this.itemsService.getItems('https://jsonplaceholder.typicode.com/users')
       .subscribe(
         items => {
           this.items = items;
+          this.loaded = true;
         });
+  }
+
+  resetUsers() {
+    this.items = null;
+    this.loaded = true;
   }
 
 }
