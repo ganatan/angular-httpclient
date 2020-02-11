@@ -9,7 +9,7 @@ import { ItemsService } from './items.service';
   imports: [
     CommonModule,
     ItemsRoutingModule,
-],
+  ],
   exports: [
     ItemsComponent
   ],
