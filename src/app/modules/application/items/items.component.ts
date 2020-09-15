@@ -14,11 +14,11 @@ export class ItemsComponent implements OnInit {
     private itemsService: ItemsService) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getUsers();
   }
 
-  getUsers() {
+  getUsers(): void {
     this.loaded = false;
     this.itemsService.getItems('https://jsonplaceholder.typicode.com/users')
       .subscribe(
@@ -28,7 +28,7 @@ export class ItemsComponent implements OnInit {
         });
   }
 
-  resetUsers() {
+  resetUsers(): void {
     this.items = null;
     this.loaded = true;
   }
