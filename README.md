@@ -1,6 +1,6 @@
-# Angular 10 Example HttpClient
+# Angular 11 Example HttpClient
 
-> An Angular starter kit featuring [Angular 10.2.2](https://angular.io), [Angular CLI 10.2.0](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 11.0.0](https://angular.io), [Angular CLI 11.0.0](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
@@ -15,7 +15,7 @@
 * [Step 9 : Example PWA](https://github.com/ganatan/angular-example-pwa)
 * [Step 10 : Example SEO](https://github.com/ganatan/angular-example-seo)
 
-* [Step 11 : Angular 10 Application](https://github.com/ganatan/angular10-app)
+* [Step 11 : Angular 11 Application](https://github.com/ganatan/angular11-app)
 
 # Web Application Live Demo
 <a href="https://angular.ganatan.com/">
@@ -54,25 +54,10 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 ### Production 
 * `npm run build`
 
-### Use Chrome version 85 min !!!!
-
 ## Tests
 * `npm run lint`
 * `npm run test`
 * `npm run e2e`
-
-## Chrome Installation on Linux
-
-```bash
-sudo sh -c 'echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
-sudo apt-get update
-
-sudo apt-get install google-chrome-stable --yes
-
-```
 
 ### Compilation
 * `npm run build`       ( without SSR)
@@ -86,10 +71,9 @@ sudo apt-get install google-chrome-stable --yes
 * `change directory` cd ui
 * launch html pages in your browser
 
-### Prototype Bootstrap 5.0.0-alpha2
+### Prototype Bootstrap 5.0.0-alpha3
 * `change directory` cd ui-v5
 * launch html pages in your browser
-
 
 ### Author
 * Author  : danny
