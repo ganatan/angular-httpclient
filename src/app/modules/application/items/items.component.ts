@@ -12,6 +12,7 @@ export class ItemsComponent implements OnInit {
   loaded: boolean;
   constructor(
     private itemsService: ItemsService) {
+    this.loaded = false;
   }
 
   ngOnInit(): void {
