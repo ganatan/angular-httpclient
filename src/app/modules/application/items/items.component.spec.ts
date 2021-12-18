@@ -12,8 +12,7 @@ describe('ItemsComponent', () => {
         HttpClientModule
       ],
       declarations: [ItemsComponent]
-    })
-      .compileComponents();
+    }).compileComponents();
   });
 
   beforeEach(() => {

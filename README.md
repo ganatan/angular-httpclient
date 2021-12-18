@@ -1,12 +1,12 @@
-# Angular 12 Example HttpClient
+# Angular 13 Example HttpClient
 
-> An Angular starter kit featuring [Angular 12.2.2](https://angular.io), [Angular CLI 12.2.2](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 13.1.1](https://angular.io), [Angular CLI 13.1.2](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
 # Web Application Live Demo
 <a href="https://angular.ganatan.com/">
-  <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 10 Example Application"/>
+  <img src="https://media.giphy.com/media/RfqiR12yhtHpwaItBq/giphy.gif" alt="Angular 13 Example Application"/>
 </a>
 
 ## Quick start
