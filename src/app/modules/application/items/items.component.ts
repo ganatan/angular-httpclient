@@ -8,6 +8,7 @@ import { ItemsService } from './items.service';
 })
 export class ItemsComponent implements OnInit {
 
+  // eslint-disable-next-line
   items: any;
   loaded: boolean;
   constructor(
