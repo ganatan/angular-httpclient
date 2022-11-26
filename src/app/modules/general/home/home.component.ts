@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { environment } from '../../../../environments/environment';
 import { SeoService } from '../../../services/seo/seo.service';
+import { Feature } from './feature';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomeComponent {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  features: Array<any>;
+  features: Array<Feature>;
 
   constructor(private seoService: SeoService) {
 
@@ -22,19 +23,13 @@ export class HomeComponent {
       'This application was developed with ' + this.version + ' and ' + this.bootstrap +
       ' It applies Routing, Lazy loading and Progressive Web App (PWA)';
 
-    const title = 'angular-ssr Title : Home Page';
+    const title = 'angular-seo Title : Home Page';
 
     this.seoService.setMetaDescription(content);
     this.seoService.setMetaTitle(title);
 
     this.features =
       [
-        {
-          name: 'Items',
-          description: 'Items',
-          icon: 'fab fa-bootstrap',
-          link: 'httpclient'
-        },
         {
           name: 'Bootstrap',
           description: 'How to use Buttons, Alerts, Pagination, Tables, Collapses',
@@ -65,6 +60,12 @@ export class HomeComponent {
           icon: 'far fa-file-alt',
           link: 'forms'
         },
+        {
+          name: 'Items',
+          description: 'Items',
+          icon: 'fab fa-bootstrap',
+          link: 'httpclient'
+        }
       ];
   }
 

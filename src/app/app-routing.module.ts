@@ -8,11 +8,6 @@ const routes: Routes = [
   { path: '', component: HomeComponent, },
 
   {
-    path: 'httpclient',
-    loadChildren: () => import('./modules/application/items/items.module')
-      .then(mod => mod.ItemsModule)
-  },  
-  {
     path: 'about',
     loadChildren: () => import('./modules/general/about/about.module')
       .then(mod => mod.AboutModule)
@@ -28,6 +23,16 @@ const routes: Routes = [
       .then(mod => mod.SignupModule)
   },
 
+  {
+    path: 'httpclient',
+    loadChildren: () => import('./modules/application/items/items.module')
+      .then(mod => mod.ItemsModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./modules/general/contact/contact.module')
+      .then(mod => mod.ContactModule)
+  },
   {
     path: 'bootstrap',
     loadChildren: () => import('./modules/application/example-bootstrap/tutorial.module')
@@ -49,18 +54,13 @@ const routes: Routes = [
       .then(mod => mod.TutorialModule)
   },
 
-  {
-    path: 'contact',
-    loadChildren: () => import('./modules/general/contact/contact.module')
-      .then(mod => mod.ContactModule)
-  },
   { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking'
-})],
+  })],
   exports: [RouterModule],
   declarations: []
 })
