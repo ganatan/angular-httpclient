@@ -65,7 +65,7 @@ export class HomeComponent {
           description: 'Items',
           icon: 'fab fa-bootstrap',
           link: 'httpclient'
-        }
+        },        
       ];
   }
 
