@@ -6,6 +6,7 @@ import { HomeComponent } from './modules/general/home/home.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

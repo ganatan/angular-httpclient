@@ -3,14 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { ItemsComponent } from './items.component';
 import { ItemsRoutingModule } from './items-routing.module';
-import { HttpClientModule } from '@angular/common/http';
 import { ItemsService } from './items.service';
 
 @NgModule({
   imports: [
     CommonModule,
     ItemsRoutingModule,
-    HttpClientModule
   ],
   exports: [
     ItemsComponent
@@ -18,7 +16,6 @@ import { ItemsService } from './items.service';
   declarations: [
     ItemsComponent
   ],
-  providers: [ItemsService
-  ],
+  providers: [ItemsService],
 })
 export class ItemsModule { }
