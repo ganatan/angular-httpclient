@@ -8,6 +8,7 @@ import { ItemsService } from './items.service';
 })
 export class ItemsComponent implements OnInit {
 
+  // eslint-disable-next-line  @typescript-eslint/no-explicit-any
   items: any;
   loaded: boolean;
   constructor(
