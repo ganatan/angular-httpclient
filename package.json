@@ -1,6 +1,6 @@
 {
   "name": "angular-httpclient",
-  "version": "16.0.1",
+  "version": "16.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
