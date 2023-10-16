@@ -3,8 +3,8 @@ export const environment = {
   application:
   {
     name: 'angular-httpclient',
-    version: 'Angular 6.2.4',
-    bootstrap: 'Bootstrap 5.3.1',
+    version: 'Angular 16.2.9',
+    bootstrap: 'Bootstrap 5.3.2',
     fontawesome: 'Font Awesome 6.4.2',
   }
 };
