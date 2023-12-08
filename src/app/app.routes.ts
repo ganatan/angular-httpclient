@@ -10,7 +10,7 @@ export const routes: Routes = [
     path: 'httpclient',
     loadChildren: () => import('./pages/application/example-items/items.module')
       .then(mod => mod.ItemsModule)
-  },  
+  },
   {
     path: 'bootstrap',
     loadChildren: () => import('./pages/application/example-bootstrap/tutorial.module')
