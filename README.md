@@ -1,6 +1,6 @@
-# Angular 17 Example HttpClient
+# Angular 18 Example HttpClient
 
-> An Angular starter kit featuring [Angular 17.0.7](https://angular.io), [Angular CLI 17.0.7](https://cli.angular.io/)
+> An Angular starter kit featuring [Angular 18.0.1](https://angular.io), [Angular CLI 18.0.2](https://cli.angular.io/)
 
 > it's part of a repo series designed to create a Progressive Web App with Angular
 
