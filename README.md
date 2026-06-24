@@ -1,4 +1,4 @@
-# Angular 20 Example HTTP Client
+# Angular 22 HTTP Client
 
 > An Angular starter kit featuring [Angular 20.0.0](https://angular.io), [Angular CLI 20.0.0](https://cli.angular.io/)
 
