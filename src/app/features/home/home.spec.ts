@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { provideRouter } from '@angular/router';
 
 import { Home } from './home';
+import { ActivatedRoute } from '@angular/router';
 
 describe('Home', () => {
   let component: Home;
@@ -11,17 +11,20 @@ describe('Home', () => {
     await TestBed.configureTestingModule({
       imports: [Home],
       providers: [
-        provideRouter([])
+        {
+          provide: ActivatedRoute,
+          useValue: {}
+        }
       ]
-    }).compileComponents();
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(Home);
     component = fixture.componentInstance;
-    await fixture.whenStable();
+    fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
-
