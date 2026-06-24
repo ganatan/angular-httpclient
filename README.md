@@ -1,4 +1,4 @@
-# Angular 22.0.2 SEO
+# Angular 22.0.2 HttpClient
 
 
 <table>
@@ -42,10 +42,10 @@ Here is a working Angular live demo :  https://angular.ganatan.com
 
 ```bash
 # download the example or clone the repo from github
-git clone https://github.com/ganatan/angular-seo.git
+git clone https://github.com/ganatan/angular-httpclient.git
 
 # change directory
-cd angular-ssr
+cd angular-httpclient
 
 # install the repo with npm
 npm install
