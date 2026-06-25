@@ -40,6 +40,7 @@ module.exports = defineConfig([
       'space-before-blocks': 'error',
       'no-alert': 'error',
       '@angular-eslint/prefer-inject': 'off',
+      '@typescript-eslint/no-explicit-any': 'off'
     },
   },
   {
@@ -97,7 +98,7 @@ module.exports = defineConfig([
 //       "space-before-blocks": "error",
 //       "no-alert": "error",
 //       '@angular-eslint/prefer-inject': 'off',
-//       '@angular-eslint/template/prefer-control-flow': 'off'      
+//       '@angular-eslint/template/prefer-control-flow': 'off'
 //     },
 //   },
 //   {

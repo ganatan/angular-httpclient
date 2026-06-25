@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { APP_ID, Component, Inject, OnInit, PLATFORM_ID, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 import { ItemsService } from './services/items.service';
 
@@ -14,7 +14,11 @@ export class ItemsComponent implements OnInit {
 
   readonly items = signal<any[]>([]);
 
-  constructor(private readonly itemsService: ItemsService) {}
+  constructor(
+    @Inject(PLATFORM_ID) private readonly platformId: object,
+    @Inject(APP_ID) private readonly appId: string,
+    private readonly itemsService: ItemsService
+  ) {}
 
   ngOnInit(): void {
     this.getUsers();
@@ -23,11 +27,25 @@ export class ItemsComponent implements OnInit {
   getUsers(): void {
     this.itemsService
       .getItems('https://jsonplaceholder.typicode.com/users')
-      .subscribe(items => this.items.set(items));
+      .subscribe(items => {
+        this.items.set(items);
+
+        const platform = isPlatformBrowser(this.platformId)
+          ? 'in the browser'
+          : 'on the server';
+
+        console.log(`getUsers : Running ${platform} with appId=${this.appId}`);
+      });
   }
 
   resetUsers(): void {
     this.items.set([]);
+
+    const platform = isPlatformBrowser(this.platformId)
+      ? 'in the browser'
+      : 'on the server';
+
+    console.log(`resetUsers : Running ${platform} with appId=${this.appId}`);
   }
 
 }
