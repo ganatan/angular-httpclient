@@ -1,61 +1,68 @@
 import { Routes } from '@angular/router';
 
-import { Home } from './features/home/home';
-import { NotFound } from './features/not-found/not-found';
+import { Home } from './modules/pages/home/home';
+import { NotFound } from './modules/pages/not-found/not-found';
 
 export const routes: Routes = [
-  { path: '', component: Home, },
+  {
+    path: '',
+    component: Home
+  },
 
   {
-    path: 'httpclient',
-    loadComponent: () => import('./features/tutorials/example-items/items.component')
-      .then(mod => mod.ItemsComponent)
-  },
-  {
     path: 'bootstrap',
-    loadChildren: () => import(`./features/tutorials/example-bootstrap/tutorial.routes`)
-      .then(routes => routes.routes)
+    loadChildren: () =>
+      import('./modules/examples/bootstrap/tutorial.routes')
+        .then(routes => routes.routes)
   },
   {
     path: 'components',
-    loadComponent: () => import('./features/tutorials/example-components/tutorial.component')
+    loadComponent: () => import('./modules/examples/components/tutorial.component')
       .then(mod => mod.TutorialComponent)
   },
   {
     path: 'forms',
-    loadChildren: () => import(`./features/tutorials/example-forms/tutorial.routes`)
+    loadChildren: () => import(`./modules/examples/forms/tutorial.routes`)
     .then(routes => routes.routes)
   },
   {
     path: 'services',
-    loadComponent: () => import('./features/tutorials/example-services/tutorial.component')
+    loadComponent: () => import('./modules/examples/services/tutorial.component')
       .then(mod => mod.TutorialComponent)
   },
 
   {
     path: 'login',
-    loadComponent: () => import(`./features/login/login`)
-      .then(mod => mod.Login)
+    loadComponent: () =>
+      import('./modules/pages/login/login')
+        .then(mod => mod.Login)
   },
+
   {
     path: 'signup',
-    loadComponent: () => import(`./features/signup/signup`)
-      .then(mod => mod.Signup)
+    loadComponent: () =>
+      import('./modules/pages/signup/signup')
+        .then(mod => mod.Signup)
   },
 
   {
     path: 'contact',
-    loadChildren: () => import(`./features/contact/contact.routes`)
-      .then(routes => routes.routes)
+    loadChildren: () =>
+      import('./modules/pages/contact/contact.routes')
+        .then(routes => routes.routes)
   },
 
   {
     path: 'about',
-    loadChildren: () => import('./features/about/about.routes')
-      .then(routes => routes.routes)
+    loadChildren: () =>
+      import('./modules/pages/about/about.routes')
+        .then(routes => routes.routes)
   },
 
-  { path: '**', component: NotFound }
+  {
+    path: '**',
+    component: NotFound
+  }
 ];
 
 // import { Routes } from '@angular/router';
@@ -68,7 +75,7 @@ export const routes: Routes = [
 
 //   {
 //     path: 'bootstrap',
-//     loadChildren: () => import(`./features/tutorials/example-bootstrap/tutorial.routes`)
+//     loadChildren: () => import(`./features/example-bootstrap/tutorial.routes`)
 //       .then(routes => routes.routes)
 //   },
 
@@ -82,7 +89,7 @@ export const routes: Routes = [
 //     loadComponent: () => import(`./features/signup/signup`)
 //       .then(mod => mod.Signup)
 //   },
-
+  
 //   {
 //     path: 'contact',
 //     loadChildren: () => import(`./features/contact/contact.routes`)
@@ -92,7 +99,7 @@ export const routes: Routes = [
 //   {
 //     path: 'about',
 //     loadChildren: () => import('./features/about/about.routes')
-//       .then(routes => routes.routes)
+//     .then(routes => routes.routes)
 //   },
 
 //   { path: '**', component: NotFound }

@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
+import { environment } from '../../../../environments/environment';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-import { environment } from '../../../environments/environment';
+import { SeoService } from '../../../core/services/seo/seo.service';
 import { Feature } from './feature';
-import { SeoService } from '../../core/services/seo/seo.service';
 
 @Component({
   selector: 'app-home',
   imports: [CommonModule, RouterLink],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.css',
 })
 export class Home {
   name = environment.application.name;
@@ -26,11 +26,10 @@ export class Home {
       'This application was developed with ' + this.version + ' and ' + this.bootstrap +
       ' It applies Routing, Lazy loading and Progressive Web App (PWA)';
 
-    const title = 'angular-seo Title : Home Page';
+    const title = 'angular-starter Title : Home Page';
 
     this.seoService.setMetaDescription(content);
     this.seoService.setMetaTitle(title);
-
 
     this.features =
       [
@@ -71,6 +70,8 @@ export class Home {
           link: 'httpclient'
         }
       ];
+
+
   }
 
 }
