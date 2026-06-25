@@ -1,0 +1,48 @@
+<div class="container py-4">
+
+  <h2>HttpClient + Signals</h2>
+
+  <p>
+    <button
+      class="btn btn-primary me-2"
+      (click)="getUsers()">
+      Get Users
+    </button>
+
+    <button
+      class="btn btn-secondary"
+      (click)="resetUsers()">
+      Reset
+    </button>
+  </p>
+
+  <p>Nombre : {{ items().length }}</p>
+
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      @for (item of items(); track item.id) {
+
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.username }}</td>
+          <td>{{ item.email }}</td>
+        </tr>
+
+      }
+
+    </tbody>
+
+  </table>
+
+</div>
+

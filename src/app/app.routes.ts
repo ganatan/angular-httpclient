@@ -10,6 +10,12 @@ export const routes: Routes = [
   },
 
   {
+    path: 'httpclient',
+    loadComponent: () => import('./modules/examples/items/items.component')
+      .then(mod => mod.ItemsComponent)
+  },
+
+  {
     path: 'bootstrap',
     loadChildren: () =>
       import('./modules/examples/bootstrap/tutorial.routes')
